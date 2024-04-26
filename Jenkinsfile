@@ -13,6 +13,9 @@ pipeline {
     stages {
         stage('Checkout Repository 2') {
             steps {
+                sh 'python hello.py'
+                sh 'python .\hello.py'
+
                 checkout([
                     $class: 'GitSCM', 
                     branches: [[name: '*/main']],
