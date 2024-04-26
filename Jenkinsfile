@@ -19,7 +19,7 @@ pipeline {
                     userRemoteConfigs: [[url: "https://github.com/carmenappelt/confluence.git"]]
                 ])
                 sh 'python hello.py'
-                sh 'python .\hello.py'
+                sh 'python ./hello.py'
 
             }
         }
